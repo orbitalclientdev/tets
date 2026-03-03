@@ -963,7 +963,7 @@ function Library:CreateWindow(settings)
         local pAvatarStroke = Instance.new("UIStroke"); pAvatarStroke.Color = accentColor; pAvatarStroke.Thickness = 2; pAvatarStroke.Transparency = 0.3; pAvatarStroke.Parent = pAvatar
 
         MakeText({Text = "Hello, " .. Player.DisplayName, Size = UDim2.new(1, -80, 0, 20), Position = UDim2.new(0, 72, 0, 15), Font = Enum.Font.GothamBold, TextSize = 16, Parent = playerCard, ZIndex = 3})
-        MakeText({Text = Player.Name .. " • " .. settings.Name, Size = UDim2.new(1, -80, 0, 16), Position = UDim2.new(0, 72, 0, 37), Font = Enum.Font.Gotham, TextSize = 11, TextColor = COLORS.textMuted, Parent = playerCard, ZIndex = 3})
+        MakeText({Text = Player.Name .. " - " .. settings.Name, Size = UDim2.new(1, -80, 0, 16), Position = UDim2.new(0, 72, 0, 37), Font = Enum.Font.Gotham, TextSize = 11, TextColor = COLORS.textMuted, Parent = playerCard, ZIndex = 3})
 
         -- Server Stats card
         local statsCard = MakeGlassFrame({Name = "ServerStats", Size = UDim2.new(1, 0, 0, 110), BgTransparency = 0.5, Parent = homePage})
